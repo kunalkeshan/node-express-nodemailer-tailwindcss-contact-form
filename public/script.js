@@ -2,11 +2,13 @@
  * Contact Form Functionality
  */
 
+// Containers
 const contactForm = document.getElementById('contact');
 const loading = document.getElementById('loading');
 const success = document.getElementById('success');
 const errorEl = document.getElementById('error');
 
+// Hide Container Function
 const hideAllContainers = () => {
     contactForm.style.display = 'none';
     loading.style.display = 'none';
@@ -14,6 +16,7 @@ const hideAllContainers = () => {
     errorEl.style.display = 'none';
 }
 
+// Contact Form Submit Handler
 const handleContactFormSubmit = async (e) => {
     e.preventDefault();
     try {
