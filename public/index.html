@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Contact Form</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="/style.css" />
+	</head>
+	<body
+		class="w-full h-screen flex flex-col gap-2 items-center justify-center bg-gradient-to-br from-green-400 to-blue-500 text-center"
+	>
+		<h1 class="text-2xl font-semibold">Contact</h1>
+		<form
+			id="contact"
+			class="w-full p-2 flex flex-col md:w-2/3 gap-2 lg:w-1/2"
+			autocomplete="off"
+		>
+			<input
+				type="text"
+				name="name"
+				id="name"
+				placeholder="eg: John Smith"
+				required
+				class="py-1 px-2 border border-black rounded"
+			/>
+			<input
+				type="email"
+				name="email"
+				id="email"
+				placeholder="example@gmail.com"
+				required
+				class="py-1 px-2 border border-black rounded"
+			/>
+			<textarea
+				name="message"
+				id="message"
+				placeholder="Hey! Let's get in touch, I want to..."
+				required
+				class="py-1 px-2 border border-black rounded resize-y"
+			></textarea>
+			<button
+				type="submit"
+				class="bg-blue-500 py-2 px-1 rounded text-md w-fit mx-auto font-semibold text-white hover:bg-opacity-100 bg-opacity-80"
+			>
+				Get in Touch!
+			</button>
+		</form>
+		<div id="success" class="hidden text-md font-semibold">
+			You've successfully contacted me, I'll get back to you soon!
+		</div>
+		<div
+			id="error"
+			class="hidden text-md font-semibold flex-col items-center justify-center"
+		>
+			<p>
+				Oops! There's some error while sending me the contact details.
+			</p>
+			<button
+				class="bg-blue-500 py-2 px-1 rounded w-fit mx-auto text-white bg-opacity-80 hover:bg-opacity-100"
+                onclick="javascript:window.location.reload();"
+			>
+				Try again
+			</button>
+		</div>
+		<div id="loading" class="hidden text-md font-semibold">
+			Your Submission is being sent...
+		</div>
+		<script src="/script.js"></script>
+	</body>
+</html>
