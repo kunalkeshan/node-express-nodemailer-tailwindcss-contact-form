@@ -41,5 +41,5 @@ exports.sendContactEmail = ({ to, name, message }) => {
         text: 'I will get back to you soon!'
     }
 
-    return Promise.all([transport.sendMail(mailOptionsToOwner), transport.sendMail(mailOptionsToUser)])
+    return Promise.all([transport.sendMail(mailOptionsToOwner), transport.sendMail(mailOptionsToUser)]);
 }

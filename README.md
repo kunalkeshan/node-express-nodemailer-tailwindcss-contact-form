@@ -42,4 +42,4 @@ MAIL_PASSWORD=<app password here>
 
 ## License
 
-Website is available under the MIT license. See the [LICENSE](./LICENSE) file for more info.
+Website is available under the MIT license. See the [LICENSE](https://github.com/Kunal-Keshan/node-express-nodemailer-tailwindcss-contact-form/blob/main/LICENSE) file for more info.
