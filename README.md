@@ -24,9 +24,13 @@ MAIL_PASSWORD=<app password here>
 
 ## Resources
 
+<!--
+
 ### Click to Watch YouTube video
 
 [![Create a contact form youtube video](./public/thumbnail.jpeg)](https://www.youtube.com/watch?v=_X-q-X-q-X-&feature=youtu.be)
+
+-->
 
 ### Blog Articles
 
